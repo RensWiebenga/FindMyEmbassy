@@ -1,0 +1,29 @@
+
+embassies
+ -// choose country//
+-// auto select coutnry //
+- // icons //
+- // add tel nummer land - netnummer //
+- // verbeteren maps //
+- // improve design //
+// if nvt then grey out icon //
+// close button with search //
+// desktop version //
+// feedback on click new country //
+// country title fix on click (malawi) //
+// underscore ambulance //
+// empty search on click new country //
+// weird input embassy number (0800) //
+// ambassy info styling //
+// disabled duidelijker //
+// amerikaans samoa - geen noodnummbers //
+// links - duidelijk maken wat links zijn //
+// armenie email is weird //
+// title country-name wordt weleens te lang //
+// amerikaanse maagdeneilanden heeft geen noodnummers //
+other pages
+menu
+
+bosnie heeft geen noodnummers
+on first entry use nederland
+kaaiman geen alarmnummers

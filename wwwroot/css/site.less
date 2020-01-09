@@ -1,0 +1,555 @@
+﻿@import "variables.less";
+@import "selectbox.less";
+
+
+
+.relative {
+    position: relative;
+}
+
+h1 {
+    margin-top: 1px;
+    margin-bottom: 0px;
+    font-size: 22px;
+    text-align: left;
+}
+p {
+    margin-top:15px;
+}
+
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+.container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
+    /*width: 100%;*/
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    background-color:@white;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: @turquoise;
+}
+
+.nav > li > a {
+    background:@white;
+}
+/* Provide sufficient contrast against white background */
+a {
+    color: @turquoise_dark;
+
+    &:hover {
+        text-decoration: none;
+        color: @black;
+    }
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+.header-container {
+    margin-left:-15px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    /* Margin bottom by footer height */
+    background: @white;
+    color: @black;
+    /*overflow-x: hidden;*/
+    max-width: 970px;
+    margin:0 auto;
+}
+
+.content {
+    /*margin-top: 115px;*/
+}
+
+main {
+    margin-top: 125px;
+    margin-bottom: 40px
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    margin-top: 12px;
+}
+
+.navbar {
+    background: @turquoise;
+    height: 105px;
+    color: @white;
+    position: fixed;
+
+    .navbar-brand {
+        max-width: 26%;
+        height: 90px;
+
+        img {
+            width: 100%;
+            float: left;
+            max-width: 65px;
+        }
+    }
+
+    .logo-text {
+        float: left;
+        padding-left: 0px;
+        padding-top: 15px;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: @white;
+        width: 57%;
+    }
+
+    .navbar-toggle {
+        margin-top: 12px;
+        border: 1px solid @white;
+        right: 0px;
+        padding: 9px 8px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 3px;
+        position: absolute;
+
+        .icon-bar {
+            background-color: @white;
+        }
+    }
+
+    .search {
+        float: left;
+        width: 74%;
+        padding-right: 15px;
+        position: relative;
+        margin-top: 10px;
+
+        .close-btn {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 15px;
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+
+        .search-bar {
+            background: @white;
+            height: 34px;
+            float: left;
+            margin-top: 3px;
+            color: @black;
+            border: 1px solid @turquoise_dark;
+            outline: none;
+            padding: 9px;
+            font-size: 16px;
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 3px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 0px;
+
+
+            &:focus {
+                outline: none;
+            }
+
+            background-image: url(../images/search_icon.png);
+            background-repeat: no-repeat;
+            background-position: 96% 5px;
+            background-size: 21px;
+
+            &.active {
+                background-image: url(../images/close_icon.png);
+            }
+        }
+
+        .search-results {
+            width: 100%;
+            margin-top: 37px;
+            position: absolute;
+            left: -15px;
+
+            .search-country {
+                text-align: left;
+                background: #fff;
+                margin-left: 15px;
+                padding: 8px;
+                border-bottom: #ccc 1px solid;
+                color: @black;
+
+                &:hover {
+                    background: @police_blue;
+                    color: @white;
+                }
+            }
+        }
+    }
+}
+
+.country-title-bar {
+    margin-bottom: 15px;
+    margin-top: 5px;
+
+    img {
+        height: 25px;
+        max-width: 70px;
+    }
+
+    .country-name {
+        padding-left: 0px;
+        font-weight: 600;
+    }
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    white-space: nowrap;
+    background: @turquoise;
+    padding-bottom: 15px;
+    color: @white;
+
+    a {
+        color: @turquoise_darker;
+    }
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+    margin-top: 15px;
+    margin-bottom: 105px;
+}
+
+
+.disabled {
+    opacity: 0.2;
+    pointer-events: none;
+
+    .icon {
+        background: @white !important;
+        border: @black 1px solid;
+
+        &:before {
+            content: "\e090";
+            font-size: 100px;
+            font-family: 'Glyphicons Halflings';
+            position: absolute;
+            left: ~"calc(50% - 50px)";
+            top: ~"calc(50% - 60px)";
+            color: @black;
+        }
+
+        img {
+            filter: invert(1);
+            opacity: 0.3;
+        }
+
+        .title {
+            color: @black;
+        }
+    }
+}
+
+.icon {
+    cursor: pointer;
+    /*border: #e7e7e7 1px solid;*/
+    overflow: hidden;
+    /*border: 2px solid #000;
+    -moz-box-shadow: inset 0 0 3px #000000;
+    -webkit-box-shadow: inset 0 0 3px #000000;
+    box-shadow: inset 0 0 3px #000000;*/
+    &:hover {
+        text-decoration: none;
+    }
+
+    img {
+        padding-top: 10px;
+        width: 80%;
+        border-style: none;
+        margin-left: 20%;
+    }
+
+    .number {
+        position: relative;
+        height: 1em;
+        font-size: 18px;
+        color: #fefefe;
+        font-weight: 600;
+        margin-top: -20px;
+        margin-bottom: 15px;
+        /*&:before {
+            font-family: 'Glyphicons Halflings';
+            content: "\e182";
+            margin-right: 5px;
+            font-size: 16px;
+        }*/
+    }
+
+    .title {
+        font-size: 14px;
+        color: #fefefe;
+        padding: 15px 15px 0px 15px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+
+.police-dept {
+    padding-right: 7.5px;
+    padding-bottom: 7.5px;
+    padding-left: 0px;
+
+    .icon {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0px;
+        background: @police_blue;
+    }
+}
+
+.ambulance-dept {
+    padding-left: 7.5px;
+    padding-bottom: 7.5px;
+    padding-right: 0px;
+
+    .icon {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 10px;
+        background: @ambulance_grey;
+    }
+}
+
+.fire-dept {
+    padding-right: 7.5px;
+    padding-top: 7.5px;
+    padding-left: 0px;
+
+    .icon {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        background: @fire_red;
+    }
+}
+
+.embassy-dept {
+    padding-left: 7.5px;
+    padding-top: 7.5px;
+    padding-right: 0px;
+
+    .icon {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0;
+        background: @embassy_green;
+
+        .number {
+        }
+    }
+}
+
+
+
+.flag-icon {
+    position: absolute;
+    top: calc(50% - 45px);
+    left: calc(50% - 45px);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    
+    overflow: hidden;
+    text-align: center;
+    border: 5px solid @white;
+    /*border: 8px solid @black;
+    -moz-box-shadow: 0 0 3px #000000;
+    -webkit-box-shadow: 0 0 3px #000000;
+    box-shadow: 0 0 3px #000000;*/
+    /*&:before {
+        font-family: 'Glyphicons Halflings';
+        content: "\e182";
+        margin-right: 5px;
+        font-size: 40px;
+    }*/
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -moz-box-shadow: inset 0 0 3px #000000;
+    -webkit-box-shadow: inset 0 0 3px #000000;
+    box-shadow: inset 0 0 3px #000000;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+}
+
+.embassy-information {
+    margin-top: 50px;
+    background: #019ca4;
+    padding: 40px 15px 25px 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 40px;
+    color: @white;
+
+    > .row {
+        margin-bottom: 15px;
+    }
+
+    a {
+        color: @turquoise_darker;
+    }
+
+    h1 {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .embassy-icon {
+        font-size: 25px;
+
+
+
+        .glyphicon {
+            vertical-align: top;
+            margin-top: -2px;
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 992px) {
+    .embassy-information {
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-right {
+        float: right !important;
+        margin-right: -15px;
+        bottom: 15px;
+        right: 30px;
+        position: absolute;
+
+        li {
+            a {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+        li:first-child {
+            a {
+                margin-left: 1px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 3px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+        }
+
+        li:nth-child(2) {
+            a {
+                margin-left: 1px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+    }
+}
+
+/*@media only screen and (orientation:landscape) {
+    body {
+        height: 100vw;
+        transform: rotate(90deg);
+    }
+}*/
